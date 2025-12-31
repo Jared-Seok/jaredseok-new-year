@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "안녕하세요. 석지원입니다.",
-  description: "소중한 분들께 신년 인사를 전합니다",
+  title: "안녕하세요. 석지원입니다",
+  description: "소중한 사람들에게 전하는 따뜻한 새해 인사말",
   openGraph: {
-    title: "2026년 새해 인사",
+    title: "안녕하세요. 석지원입니다",
     description: "병오년 새해, 소중한 마음을 담아 전합니다.",
-    url: "https://new-year-letter-2026.vercel.app", // 추후 배포 후 실제 URL로 변경 권장
+    url: "https://jaredseok-new-year.vercel.app",
     siteName: "2026 새해 인사",
     locale: "ko_KR",
     type: "website",
