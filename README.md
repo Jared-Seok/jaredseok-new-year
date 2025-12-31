@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎊 2026년 새해 인사 프로젝트 (New Year Greeting)
 
-## Getting Started
+이 프로젝트는 소중한 사람들에게 따뜻한 새해 인사를 전하기 위해 제작되는 Next.js 기반의 웹 페이지입니다.
 
-First, run the development server:
+## 🚀 전체 개발 및 배포 흐름
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **웹 페이지 생성**: 기본적인 레이아웃 및 인사말 컨텐츠 구성 (진행 중)
+2. **디자인 수정**: 폰트, 색상, 애니메이션 효과 등 디자인 고도화
+3. **GitHub 업로드**: 소스 코드 버전 관리 및 저장소 업로드
+4. **Vercel 배포**: 웹 호스팅 서비스를 통한 실시간 사이트 오픈
+5. **카카오톡 전송**: 완성된 링크를 공유하여 인사 전하기
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📅 현재 진행 상황 및 계획
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [x] 프로젝트 초기 설정 (Next.js)
+- [x] 기본 인사말 컨텐츠 작성
+- [x] 모바일 최적화 및 메타데이터(OG Tag) 설정
+- [ ] 최종 배포 및 공유 테스트
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 현재 구현된 디자인 스타일 (분석)
 
-## Learn More
+- **컬러 팔레트**: 따뜻하고 차분한 베이지색 배경(`f4f1ea`)과 가독성 높은 짙은 회색 텍스트(`#111111`)를 사용하여 종이 편지의 느낌을 구현
+- **타이포그래피**: 
+  - 기본 본문: `Noto Sans KR` (Sans-serif) 폰트를 사용하여 깔끔하고 현대적인 느낌
+  - **푸터 강조**: 마지막 인사와 서명 부분에 `Nanum Myeongjo` (Serif) 폰트를 적용하여 실제 편지와 같은 부드럽고 격조 있는 분위기 연출
+  - 헤더 소제목에 넓은 자간(`tracking-[0.3em]`)을 적용하여 여백의 미 강조
+  - 본문 내 인용구는 `italic` 스타일과 좌측 보더(`border-l-2`)로 구분감 부여
+- **레이아웃**: 
+  - 모바일 가독성을 최우선으로 한 최대 폭 `max-w-2xl`의 중앙 정렬 레이아웃
+  - **헤더 구성**: 우측 정렬(`text-right`)과 타이틀 줄바꿈을 통해 시각적 변주와 여백의 미를 강조
+  - 넉넉한 줄간격(`leading-[2.1]`)과 문단 간격(`space-y-8`)으로 편안한 읽기 경험 제공
+  - **여백 최적화**: 
+    - 헤더 여백(`mb-10`)을 조정하여 본문 진입 시선 유도
+    - 본문과 푸터 사이의 간격을 최적화(`mt-8 pt-8`)하고 은은한 구분선(`border-t`)을 추가
+    - **핵심 메시지 강조**: 마지막 두 문단에 미세한 배경색(`bg-black/[0.02]`)과 강조 심볼(`·`)을 적용하여 본문과 차별화된 깊이감 부여
+    - 푸터 내 인사말과 날짜 사이의 간격(`space-y-8`)을 30% 축축소하여 시각적 결속력 강화
+- **푸터 디자인**: 
+  - 은은한 구분선과 함께 우측 정렬된 서명과 날짜로 격식 있는 편지 마무리 연출
+  - 명조체 계열 폰트 적용과 차분한 폰트 크기(서명: `xl md:2xl`)를 통해 깊은 여운을 주는 마무리 구현
+  - 인사말에 여유 있는 줄간격(`leading-relaxed`)을 적용하여 정중한 느낌 강조- **반응형 디자인**: `md:` 브레이크포인트를 활용하여 데스크탑 환경에서는 더 넓은 여백과 큰 텍스트 크기 제공
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 디자인 수정 방향 (예정)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **사용자 경험**: 모바일 가독성 최우선 고려

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f1ea;
+  --foreground: #111111;
 }
 
 @theme inline {
@@ -12,15 +12,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 시스템 다크모드 설정을 무시하고 항상 베이지 배경 유지 */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: #f4f1ea !important;
+  color: #111111 !important;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
