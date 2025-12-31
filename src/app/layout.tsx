@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "2026년 새해 인사",
+    title: "안녕하세요. 석지원입니다",
     description: "병오년 새해, 소중한 마음을 담아 전합니다.",
     images: ["/og-image.png"],
   },
