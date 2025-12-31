@@ -42,3 +42,4 @@ export default function RootLayout({
     </html>
   );
 }
+// Force redeploy - 2026 New Year Greeting
